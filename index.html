@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<html> 
+    <head>
+        <link rel="icon" href="image/favicon.jpg">
+        <title>학생회 농구부스</title> 
+      <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" /> 
+      <script defer src="https://pyscript.net/alpha/pyscript.js"></script> 
+      <py-env> 
+        - numpy 
+        - matplotlib
+      </py-env>
+      <link rel="stylesheet" href="style.css"> 
+      
+    </head> 
+  <body> 
+    <div class="countBox">
+    <py-script> 
+      print('농구게임에 오신걸 환영합니다.')
+      print("적힌거 확인했냐? 빨리 던져;;") 
+    </py-script> 
+    <div id="plot"></div> 
+    <py-script output="plot"> 
+        import random
+
+ran = ('축구공', '짐볼', '농구공', '비치볼', '탁구공')
+
+print(random.sample(ran,1))
+    </py-script>
+</div>
+  </body> 
+</html>
